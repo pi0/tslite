@@ -12,7 +12,7 @@
     "tsserver": "./bin/tsserver"
   },
   "engines": {
-    "node": ">=14.17"
+    "node": ">=18.18.0"
   },
   "files": [
     "bin",
