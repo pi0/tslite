@@ -61,18 +61,3 @@ Using yarn [selective dependency resolutions](https://classic.yarnpkg.com/lang/e
   }
 }
 ```
-
-### pnpm (alternative)
-
-Using [pnpm overrides](https://pnpm.io/package_json#pnpmoverrides):
-
-```jsonc
-// package.json
-{
-  "pnpm": {
-    "overrides": {
-      "typescript": "npm:tslite@latest"
-    }
-  }
-}
-```
