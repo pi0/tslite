@@ -1,0 +1,51 @@
+{
+  "name": "tslite",
+  "version": "5.3.0-dev.20231006.1",
+  "description": "🪶 Smaller Typescript Redistibution",
+  "repository": "pi0/tslite",
+  "------dist-start------": true,
+  "license": "Apache-2.0",
+  "main": "./lib/typescript.js",
+  "typings": "./lib/typescript.d.ts",
+  "bin": {
+    "tsc": "./bin/tsc",
+    "tsserver": "./bin/tsserver"
+  },
+  "engines": {
+    "node": ">=14.17"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "LICENSE.txt",
+    "ThirdPartyNoticeText.txt",
+    "!**/.gitattributes"
+  ],
+  "------dist-end------": true,
+  "scripts": {
+    "build": "jiti ./build.ts",
+    "lint": "eslint --cache --ext .ts,.js,.mjs,.cjs . && prettier -c .",
+    "lint:fix": "eslint --cache --ext .ts,.js,.mjs,.cjs . --fix && prettier -c .",
+    "prepack": "pnpm run build",
+    "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
+    "test:tsc": "./bin/tsc",
+    "test": "pnpm lint"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "@types/uglify-js": "^3.17.2",
+    "changelogen": "^0.5.5",
+    "consola": "^3.2.3",
+    "esbuild": "^0.19.4",
+    "eslint": "^8.50.0",
+    "eslint-config-unjs": "^0.2.1",
+    "jiti": "^1.20.0",
+    "mlly": "^1.4.2",
+    "pathe": "^1.1.1",
+    "prettier": "^3.0.3",
+    "pretty-bytes": "^6.1.1",
+    "typescript": "5.3.0-dev.20231006",
+    "uglify-js": "^3.17.4"
+  },
+  "packageManager": "pnpm@8.6.12"
+}
