@@ -49,9 +49,9 @@ Using npm [overrides](https://docs.npmjs.com/cli/v8/configuring-npm/package-json
 }
 ```
 
-### yarn
+### yarn and pnpm
 
-Using yarn [selective dependency resolutions](https://classic.yarnpkg.com/lang/en/docs/selective-version-resolutions/):
+Using yarn [selective dependency resolutions](https://classic.yarnpkg.com/lang/en/docs/selective-version-resolutions/) or [pnpm overrides](https://pnpm.io/package_json#pnpmoverrides):
 
 ```jsonc
 // package.json
@@ -62,9 +62,9 @@ Using yarn [selective dependency resolutions](https://classic.yarnpkg.com/lang/e
 }
 ```
 
-### pnpm
+### pnpm (alternative)
 
-Using [pnpm.overrides](https://pnpm.io/package_json#pnpmoverrides):
+Using [pnpm overrides](https://pnpm.io/package_json#pnpmoverrides):
 
 ```jsonc
 // package.json
