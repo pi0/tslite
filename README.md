@@ -2,18 +2,15 @@
 
 [![install size](https://packagephobia.com/badge?p=tslite)](https://packagephobia.com/result?p=tslite)
 
-Smaller Typescript Redistribution
-
-> **Note**
-> This is a proof-of-concept work!
+`tslite` is a redistribution of `typescript` package with same public API but much smaller install size!
 
 ## Why?
 
-The size of TypeScript has grown significantly over time and is now unreasonably large to be used as a dependency in projects. [![install size](https://packagephobia.com/badge?p=typescript)](https://packagephobia.com/result?p=typescript)
+The 'typescript' package's installation size has significantly increased over time and is now [unreasonably large](https://packagephobia.com/result?p=typescript) for use as a project dependency.
 
-However, this issue has been on the radar of the TypeScript team for a long time ([microsoft/TypeScript#27891](https://github.com/microsoft/TypeScript/issues/27891)), and despite constant efforts by [@jakebailey](https://github.com/jakebailey) and the rest of their team 💙 to reduce the installation size, there are certain decisions TypeScript cannot make to further reduce its size. This is because a many of tools and the ecosystem depend on this package. However, for user-facing usage, we can make more improvements.
+However, this issue has been on the TypeScript team's radar ([microsoft/TypeScript#27891](https://github.com/microsoft/TypeScript/issues/27891)), and with the continuous efforts of [@jakebailey](https://github.com/jakebailey) and the rest of the TypeScript team to reduce the installation size, there are certain limitations preventing further size reduction.
 
-The goal of this package is not to interfere with TypeScript's core improvements but to provide an alternative distribution tailored for end-users who require TypeScript as a peer dependency.
+Nevertheless, we can make further optimizations for end-users. The aim of this package is not to impede TypeScript's core improvements but to offer an alternative distribution tailored for end-users who require TypeScript as a peer dependency in their projects.
 
 ## How?
 
