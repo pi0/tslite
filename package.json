@@ -12,7 +12,7 @@
     "tsserver": "./bin/tsserver"
   },
   "engines": {
-    "node": ">=14.17"
+    "node": ">=14.21.3"
   },
   "files": [
     "bin",
@@ -32,20 +32,20 @@
     "test": "pnpm lint"
   },
   "devDependencies": {
-    "@types/node": "^20.8.2",
-    "@types/uglify-js": "^3.17.2",
+    "@types/node": "^20.11.30",
+    "@types/uglify-js": "^3.17.5",
     "changelogen": "^0.5.5",
     "consola": "^3.2.3",
-    "esbuild": "^0.19.4",
-    "eslint": "^8.50.0",
+    "esbuild": "^0.20.2",
+    "eslint": "^8.57.0",
     "eslint-config-unjs": "^0.2.1",
-    "jiti": "^1.20.0",
-    "mlly": "^1.4.2",
-    "pathe": "^1.1.1",
-    "prettier": "^3.0.3",
+    "jiti": "^1.21.0",
+    "mlly": "^1.6.1",
+    "pathe": "^1.1.2",
+    "prettier": "^3.2.5",
     "pretty-bytes": "^6.1.1",
-    "typescript": "5.3.0-dev.20231006",
+    "typescript": "5.4.3",
     "uglify-js": "^3.17.4"
   },
-  "packageManager": "pnpm@8.6.12"
+  "packageManager": "pnpm@8.15.5"
 }
