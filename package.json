@@ -37,7 +37,7 @@
     "changelogen": "^0.5.5",
     "consola": "^3.2.3",
     "esbuild": "^0.19.4",
-    "eslint": "^8.50.0",
+    "eslint": "^9.2.0",
     "eslint-config-unjs": "^0.2.1",
     "jiti": "^1.20.0",
     "mlly": "^1.4.2",
