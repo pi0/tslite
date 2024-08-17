@@ -24,28 +24,28 @@
   "------dist-end------": true,
   "scripts": {
     "build": "jiti ./build.ts",
-    "lint": "eslint --cache --ext .ts,.js,.mjs,.cjs . && prettier -c .",
-    "lint:fix": "eslint --cache --ext .ts,.js,.mjs,.cjs . --fix && prettier -c .",
+    "lint": "eslint --cache . && prettier -c .",
+    "lint:fix": "eslint --cache . --fix && prettier -c .",
     "prepack": "pnpm run build",
     "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
     "test:tsc": "./bin/tsc",
     "test": "pnpm lint"
   },
   "devDependencies": {
-    "@types/node": "^20.8.2",
-    "@types/uglify-js": "^3.17.2",
+    "@types/node": "^22.4.0",
+    "@types/uglify-js": "^3.17.5",
     "changelogen": "^0.5.5",
     "consola": "^3.2.3",
-    "esbuild": "^0.19.4",
-    "eslint": "^8.50.0",
-    "eslint-config-unjs": "^0.2.1",
-    "jiti": "^1.20.0",
-    "mlly": "^1.4.2",
-    "pathe": "^1.1.1",
-    "prettier": "^3.0.3",
+    "esbuild": "^0.23.1",
+    "eslint": "^9.9.0",
+    "eslint-config-unjs": "^0.3.2",
+    "jiti": "^1.21.6",
+    "mlly": "^1.7.1",
+    "pathe": "^1.1.2",
+    "prettier": "^3.3.3",
     "pretty-bytes": "^6.1.1",
-    "typescript": "5.3.0-dev.20231006",
-    "uglify-js": "^3.17.4"
+    "typescript": "^5.5.4",
+    "uglify-js": "^3.19.2"
   },
-  "packageManager": "pnpm@8.6.12"
+  "packageManager": "pnpm@9.7.1"
 }

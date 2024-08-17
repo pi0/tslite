@@ -1,1 +1,3 @@
 pnpm-lock.yaml
+package.json
+bin/tsc

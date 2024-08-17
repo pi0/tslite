@@ -8,7 +8,9 @@ const pkgDir = resolve(__dirname);
 const libDir = resolve(pkgDir, "./lib");
 try {
   fs.rmSync(libDir, { recursive: true });
-} catch {}
+} catch {
+  // Ignore
+}
 fs.mkdirSync(libDir, { recursive: true });
 
 // TS package info

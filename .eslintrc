@@ -1,7 +1,0 @@
-{
-  "extends": ["eslint-config-unjs"],
-  "rules": {
-    "unicorn/prefer-top-level-await": 0,
-    "unicorn/prefer-module": 0
-  }
-}

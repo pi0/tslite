@@ -24,10 +24,6 @@ Typescript cannot be officially distributed minified because of [preserving stac
 
 Typescript package ships with `~3.8M` of localized translation files for error messages which are usually not used. TSLite removed them.
 
-### Typescript Nightly
-
-[@jakebailey](https://github.com/jakebailey) recently worked on [microsoft/TypeScript#55273](https://github.com/microsoft/TypeScript/pull/55273) to merge `tsserverlibrary.js` and `typescript.js` and removing a huge amount of duplicate codes. This change will be available as of [early 5.3](https://github.com/microsoft/TypeScript/issues/27891#issuecomment-1676580727). I wasn't patient enough and made this redist based on this improvement to see the difference. (It reduced minified lib size from `~17MB` to `~14MB`)
-
 ### More Ideas?
 
 I am thinking about more possible ideas to make typescript lib even smaller. For instance, we can lazily import compiler bits from the network on demand and cache them in a global user file being shared across projects. Ideas and PRs are more than welcome!!
@@ -44,8 +40,8 @@ Using npm [overrides](https://docs.npmjs.com/cli/v8/configuring-npm/package-json
 // package.json
 {
   "overrides": {
-    "typescript": "npm:tslite@latest"
-  }
+    "typescript": "npm:tslite@latest",
+  },
 }
 ```
 
@@ -57,7 +53,7 @@ Using yarn [selective dependency resolutions](https://classic.yarnpkg.com/lang/e
 // package.json
 {
   "resolutions": {
-    "typescript": "npm:tslite@latest"
-  }
+    "typescript": "npm:tslite@latest",
+  },
 }
 ```
