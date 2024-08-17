@@ -25,7 +25,6 @@ jobs:
       - run: pnpm lint
       - run: pnpm build
       - run: ./bin/tsc
-      - run: npm publish
       - name: release
         if: |
           github.event_name == 'push' &&
