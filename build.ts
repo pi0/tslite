@@ -15,6 +15,7 @@ fs.mkdirSync(libDir, { recursive: true });
 
 // TS package info
 const tsPkgPath = require.resolve("typescript/package.json");
+const tsPkg = require(tsPkgPath);
 const tsPkgDir = dirname(tsPkgPath);
 
 // Copy license
@@ -71,3 +72,11 @@ for (const file of libFiles) {
     fs.copyFileSync(filePath, resolve(libDir, file));
   }
 }
+
+// Sync version
+const pkg = require(resolve(pkgDir, "./package.json"));
+pkg.version = tsPkg.version;
+fs.writeFileSync(
+  resolve(pkgDir, "./package.json"),
+  JSON.stringify(pkg, undefined, 2),
+);

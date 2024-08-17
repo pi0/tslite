@@ -1,6 +1,6 @@
 {
   "name": "tslite",
-  "version": "5.3.0",
+  "version": "5.5.4",
   "description": "🪶 Smaller Typescript Redistibution",
   "repository": "pi0/tslite",
   "------dist-start------": true,
@@ -26,20 +26,17 @@
     "build": "jiti ./build.ts",
     "lint": "eslint --cache . && prettier -c .",
     "lint:fix": "eslint --cache . --fix && prettier -c .",
-    "prepack": "pnpm run build",
-    "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
-    "test:tsc": "./bin/tsc",
-    "test": "pnpm lint"
+    "release": "pnpm run build && pnpm test && npm publish",
+    "test": "pnpm lint && ./bin/tsc"
   },
   "devDependencies": {
     "@types/node": "^22.4.0",
     "@types/uglify-js": "^3.17.5",
-    "changelogen": "^0.5.5",
     "consola": "^3.2.3",
     "esbuild": "^0.23.1",
     "eslint": "^9.9.0",
     "eslint-config-unjs": "^0.3.2",
-    "jiti": "^1.21.6",
+    "jiti": "^2.0.0-beta.3",
     "mlly": "^1.7.1",
     "pathe": "^1.1.2",
     "prettier": "^3.3.3",

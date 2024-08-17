@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  id-token: write
+
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -16,9 +19,22 @@ jobs:
       - run: corepack enable
       - uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: "pnpm"
       - run: pnpm install
       - run: pnpm lint
       - run: pnpm build
-      - run: pnpm test:tsc
+      - run: ./bin/tsc
+      - run: npm publish
+      - name: release
+        if: |
+          github.event_name == 'push' &&
+          !contains(github.event.head_commit.message, '[skip-release]') &&
+          !startsWith(github.event.head_commit.message, 'docs') &&
+          !startsWith(github.event.head_commit.message, 'chore')
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc &&
+          npm publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
