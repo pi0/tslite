@@ -1,8 +1,11 @@
 # 🪶 tslite
 
-[![install size](https://packagephobia.com/badge?p=tslite)](https://packagephobia.com/result?p=tslite)
+`tslite` is a redistribution of `typescript` package with same public API but much smaller install size: <sub>[![][20]][21]</sub> vs <sub>[![][10]][11]</sub>
 
-`tslite` is a redistribution of `typescript` package with same public API but much smaller install size!
+[10]: https://flat.badgen.net/packagephobia/install/typescript?label=typescript&scale=.8&color=orange
+[11]: https://packagephobia.com/result?p=typescript
+[20]: https://flat.badgen.net/packagephobia/install/tslite?label=tslite&scale=.8&color=blue
+[21]: https://packagephobia.com/result?p=tslite
 
 ## Why?
 
