@@ -12,7 +12,7 @@
     "tsserver": "./bin/tsserver"
   },
   "engines": {
-    "node": ">=14.17"
+    "node": ">=14.21.3"
   },
   "files": [
     "bin",
@@ -30,19 +30,19 @@
     "test": "pnpm lint && ./bin/tsc"
   },
   "devDependencies": {
-    "@types/node": "^22.4.0",
+    "@types/node": "^22.5.4",
     "@types/uglify-js": "^3.17.5",
     "consola": "^3.2.3",
     "esbuild": "^0.23.1",
-    "eslint": "^9.9.0",
+    "eslint": "^9.10.0",
     "eslint-config-unjs": "^0.3.2",
     "jiti": "^2.0.0-beta.3",
     "mlly": "^1.7.1",
     "pathe": "^1.1.2",
     "prettier": "^3.3.3",
     "pretty-bytes": "^6.1.1",
-    "typescript": "^5.5.4",
-    "uglify-js": "^3.19.2"
+    "typescript": "^5.6.2",
+    "uglify-js": "^3.19.3"
   },
-  "packageManager": "pnpm@9.7.1"
+  "packageManager": "pnpm@9.10.0"
 }
