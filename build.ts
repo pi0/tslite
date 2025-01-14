@@ -15,6 +15,7 @@ fs.mkdirSync(libDir, { recursive: true });
 
 // TS package info
 const tsPkgPath = require.resolve("typescript/package.json");
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const tsPkg = require(tsPkgPath);
 const tsPkgDir = dirname(tsPkgPath);
 
@@ -74,6 +75,7 @@ for (const file of libFiles) {
 }
 
 // Sync version
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const pkg = require(resolve(pkgDir, "./package.json"));
 pkg.version = tsPkg.version;
 fs.writeFileSync(
