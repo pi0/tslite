@@ -30,7 +30,7 @@
     "test": "pnpm lint && ./bin/tsc"
   },
   "devDependencies": {
-    "@types/node": "^22.10.6",
+    "@types/node": "^24.10.11",
     "@types/uglify-js": "^3.17.5",
     "consola": "^3.4.0",
     "esbuild": "^0.24.2",
