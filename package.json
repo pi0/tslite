@@ -1,6 +1,6 @@
 {
   "name": "tslite",
-  "version": "5.7.3",
+  "version": "6.0.2",
   "description": "🪶 Smaller Typescript Redistibution",
   "repository": "pi0/tslite",
   "------dist-start------": true,
@@ -41,7 +41,7 @@
     "pathe": "^2.0.1",
     "prettier": "^3.4.2",
     "pretty-bytes": "^6.1.1",
-    "typescript": "^5.7.3",
+    "typescript": "^6.0.2",
     "uglify-js": "^3.19.3"
   },
   "packageManager": "pnpm@9.15.4"
